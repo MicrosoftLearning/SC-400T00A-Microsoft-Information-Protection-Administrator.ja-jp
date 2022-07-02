@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 05acea7ffe00c54d00c935da94f15ba402b23121
-ms.sourcegitcommit: 2e9e5dd78a50682b1afef130c7c566b7d929f854
+ms.openlocfilehash: d8cf9d01fd8f69396de10007c3da442a391c2f36
+ms.sourcegitcommit: 8194831011a18168bab9873a95798c96a13cc448
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137899363"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "145025190"
 ---
 # <a name="lab-2---exercise-3---manage-dlp-reports"></a>ラボ 2 - 演習 3 - DLP レポートを管理する
 
@@ -18,15 +18,15 @@ ms.locfileid: "137899363"
 
 2. **Microsoft Edge** で、 **https://compliance.microsoft.com** に移動して Microsoft 365 コンプライアンス ポータルに **MOD 管理者** admin@WWLxZZZZZZ.onmicrosoft.com としてログインします (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。  管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
 
-3. 左側のナビゲーション ペインで、 **[アクセス許可]** を選択し、 **[コンプライアンス センター]** の下にある **[役割]** を選択します。  **[Security Reader]** ロールの横にあるチェック ボックスをオンにします。
+3. 左側のナビゲーション ペインで、 **[アクセス許可]** を選択し、 **[Microsoft Purview ソリューション]** の下にある **[役割]** を選択します。  **[Security Reader]** ロールの横にあるチェック ボックスをオンにします。
 
 4. *[Security Reader]* ペインで、 **[メンバー]** 領域の **[編集]** を選択します。
 
-5. **「メンバーの選択」** 、 **「+ 追加」** の順に選択します。
+5. **[メンバーの選択]**、**[+ 追加]** の順に選択します。
 
-6. 「**Megan Bowen**」を検索し、名前の前にあるチェックボックスを選択して、 **「追加」** を選択します。
+6. 「**Megan Bowen**」を検索し、名前の前にあるチェックボックスを選択して、**[追加]** を選択します。
 
-7. メンバー一覧が変更されていることを確認したら、 **「完了」** を選択します。
+7. メンバー一覧が変更されていることを確認したら、**[完了]** を選択します。
 
 8. **[保存]** を選択します。 **[Security Reader]** ロール ペインを閉じます。
 
@@ -40,7 +40,7 @@ ms.locfileid: "137899363"
 
 2. **Microsoft Edge** で、 **https://compliance.microsoft.com** に移動して Microsoft 365 コンプライアンス ポータルに **Megan Bowen** MeganB@WWLxZZZZZZ.onmicrosoft.com としてログインします (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。  Megan のパスワードは、ラボ ホスティング プロバイダーから支給されます。
 
-3. 左側のナビゲーション ウィンドウで、 **「レポート」** を選択して、「レポート ダッシュボード」にアクセスします。
+3. 左側のナビゲーション ウィンドウで、**[レポート]** を選択して、レポート ダッシュボードにアクセスします。
 
 アクセスが構成され、新しいコンプライアンス責任者がコンプライアンス センターのレポートを閲覧できることが確認されました。
 
