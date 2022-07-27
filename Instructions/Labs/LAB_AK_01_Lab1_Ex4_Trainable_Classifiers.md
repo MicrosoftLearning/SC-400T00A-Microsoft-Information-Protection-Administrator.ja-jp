@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 2ad34717cf73d4b4aafdf8edb6fdc696cfc799aa
-ms.sourcegitcommit: c78ddb966a982b76e7f46fc17a42847f76d6e1a0
+ms.openlocfilehash: a7779dc81ae67d9e935768e8a7ba5234bc82d816
+ms.sourcegitcommit: 87981d92cddd039f65cba07c3f57ea6a12dd251a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154852"
+ms.locfileid: "147155305"
 ---
 # <a name="lab-1---exercise-4---manage-trainable-classifiers"></a>ラボ 1 - 演習 4 - トレーニング可能な分類器を管理する
 
@@ -22,9 +22,9 @@ Contoso Ltd. のテナントには、"Sales and Marketing" という名前の Sh
 
 1. ブラウザー画面を閉じ、新しいブラウザー画面を開きます。
 
-1. **Microsoft Edge** で、**https://compliance.microsoft.com** に移動します。
+1. **Microsoft Edge** で、 **https://compliance.microsoft.com** に移動します。
 
-1. **[アカウントを選択する]** ページが表示されたら、**[別のアカウントを使用する]** を選択し、**MOD 管理者** admin@WWLxZZZZZZ.onmicrosoft.com としてサインインします (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。  管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
+1. **[アカウントを選択する]** ページが表示されたら、 **[別のアカウントを使用する]** を選択し、**MOD 管理者** admin@WWLxZZZZZZ.onmicrosoft.com としてサインインします (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。  管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
 
 1. 左側のナビゲーション ウィンドウから **[データ分類]** に移動します。
 
@@ -34,7 +34,7 @@ Contoso Ltd. のテナントには、"Sales and Marketing" という名前の Sh
 
 1. ブラウザー ウィンドウを更新します。
 
-1. ウィンドウ上部のバナーに、 **"To set you up for creating trainable classifiers, we're currently scanning your content locations to generate analytics that will help us learn what type of content is in your organization.This process will take 7 to 14 days to complete" (トレーニング可能な分類器を作成する準備として、組織内のコンテンツの種類を把握するのに役立つ分析を生成するために、コンテンツの場所をスキャンしています。この処理が完了するまでに 7 日から 14 日かかります)** というメッセージが表示されるので、目を通しておきます。
+1. ウィンドウ上部のバナーに、"**トレーニング可能な分類器を作成する準備として、組織内のコンテンツの種類を把握するのに役立つ分析を生成するために、コンテンツの場所をスキャンしています。この処理が完了するまでに 7 日から 14 日かかります**" というメッセージが表示されるので、目を通しておきます。
 
 1. クライアントを開いたままにしておきます。
 
@@ -50,7 +50,7 @@ Contoso Ltd. のテナントには、"Sales and Marketing" という名前の Sh
 
 1. ブラウザー画面を閉じ、新しいブラウザー画面を開きます。
 
-1. **Microsoft Edge** で、**https://compliance.microsoft.com** に移動します。
+1. **Microsoft Edge** で、 **https://compliance.microsoft.com** に移動します。
 
 1. **[アカウントを選択する]** ページが表示されたら、**[他のアカウントを使用する]** を選択し、**"Joni Sherman"** としてサインインします。 JoniS@WWLxZZZZZZ.onmicrosoft.com (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。  Joni のパスワードは、ラボ ホスティング プロバイダーから支給されます。
 
@@ -152,7 +152,7 @@ Contoso Ltd. のテナントには、"Sales and Marketing" という名前の Sh
 
 1. リストから最初のファイルの名前を選択し、プレビュー ウィンドウを開きます。
 
-1. **[予測]** 行が **[一致]** と等しい場合、ファイルは分類器に一致するとして特定されます。 プレビュー ウィンドウの下に、**"We predict this item "matched" this classifier." (このアイテムはこの分類器に "一致した" と予測します。)** というメッセージ が表示されます。 **[一致]** を選択して、自動分類を承認します。
+1. **[予測]** 行が **[一致]** と等しい場合、ファイルは分類器に一致するとして特定されます。 プレビュー ウィンドウの下に、 **"We predict this item "matched" this classifier." (このアイテムはこの分類器に "一致した" と予測します。)** というメッセージ が表示されます。 **[一致]** を選択して、自動分類を承認します。
 
 1. **[予測]** 行が **[一致していません]** と等しい場合、ファイルは分類器に一致しないものとして特定されます。 プレビュー ウィンドウの下に、"**We predict this item "does not match" this classifier." (このアイテムはこの分類器に "一致しない" と予測します。)** というメッセージ が表示されます。 **[一致していません]** を選択してを選択して、自動分類を承認します。
 
