@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c392b72c3f9f6a871765ebcc25baecc167889bb0
-ms.sourcegitcommit: c78ddb966a982b76e7f46fc17a42847f76d6e1a0
+ms.openlocfilehash: fbf7dad2bb533f78527990015c8531be22894b9d
+ms.sourcegitcommit: f7259dd59786836bf2ccb7f3c1a5ef37ec745a4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154878"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "147629908"
 ---
 # <a name="lab-3---exercise-4---configure-event-based-retention"></a>ラボ 3 - 演習 4 - イベント ベースの保持を構成する
 
@@ -133,7 +133,7 @@ ms.locfileid: "147154878"
 
 1. 新しく表示された **[資産 ID]** フィールドを **BostonOfficeLaunch** に設定し、右上隅の **[X]** を選んで右側のメニューを閉じます。
 
-これで、ラベルと資産 ID がドキュメントに正常に割り当てられました。 資産 ID 1234 の "プロジェクトの完了" イベントがトリガーされると、5 年間の保持期間がアクティブになります。
+これで、ラベルと資産 ID がドキュメントに正常に割り当てられました。 資産 ID BostonOfficeLaunch の "プロジェクトの完了" イベントがトリガーされると、5 年間の保持期間がアクティブになります。
 
 ### <a name="task-5--create-specific-event"></a>タスク 5 – 特定のイベントを作成する
 
