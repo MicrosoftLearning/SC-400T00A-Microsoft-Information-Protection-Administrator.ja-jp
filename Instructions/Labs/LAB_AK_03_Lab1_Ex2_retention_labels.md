@@ -1,10 +1,13 @@
 ---
-ms.openlocfilehash: a094ffb178d8fd9fcbc5d418be7fa6027c13a1e4
-ms.sourcegitcommit: c78ddb966a982b76e7f46fc17a42847f76d6e1a0
+lab:
+  title: 演習 2 - 保持ラベルを実装する
+  module: Module 3 - Implement Data Lifecycle and Records Management
+ms.openlocfilehash: da215e79c0e2bc22f385244dc668d5bf1cb521d2
+ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154815"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "147694937"
 ---
 # <a name="lab-3---exercise-2---implement-retention-labels"></a>ラボ 3 - 演習 2 - 保持ラベルを実装する
 
@@ -72,7 +75,7 @@ ms.locfileid: "147154815"
 
 1. Client 1 VM (LON-CL1) には **lon-cl1\admin** アカウントでログインし、Microsoft 365 には **Joni Sherman** としてログインしておく必要があります。 
 
-1. **Microsoft Edge** に、Microsoft Purview ポータルのタブがまだ開かれているはずです。 その場合は、それを選択して次の手順に進みます。 閉じた場合は、新しいタブで **https://compliance.microsoft.com** に移動します。
+1. **Microsoft Edge** で、Microsoft Purview ポータルのタブがまだ開かれているはずです。 その場合は、それを選択して次の手順に進みます。 閉じた場合は、新しいタブで **https://compliance.microsoft.com** に移動します。
 
 1. **Microsoft Purview** ポータルの左側のナビゲーション ウィンドウで **[ポリシー]** を選択し、 **[データ]** で **[保持]** を選択します。
 
@@ -116,7 +119,7 @@ VAT の還付と関連書類の保持ラベルが正常に発行されました�
 
 1. Client 1 VM (LON-CL1) には **lon-cl1\admin** アカウントでログインし、Microsoft 365 には **Joni Sherman** としてログインしておく必要があります。 
 
-1. **Microsoft Edge** に、Microsoft Purview ポータルのタブがまだ開かれているはずです。 その場合は、それを選択して次の手順に進みます。 閉じた場合は、新しいタブで **https://compliance.microsoft.com** に移動します。
+1. **Microsoft Edge** で、Microsoft Purview ポータルのタブがまだ開かれているはずです。 その場合は、それを選択して次の手順に進みます。 閉じた場合は、新しいタブで **https://compliance.microsoft.com** に移動します。
 
 1. **Microsoft Purview** ポータルの左側のナビゲーション ウィンドウで **[ポリシー]** を選択し、 **[データ]** で **[保持]** を選択します。
 

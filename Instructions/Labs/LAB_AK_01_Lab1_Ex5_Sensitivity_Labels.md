@@ -1,14 +1,17 @@
 ---
-ms.openlocfilehash: 4ecaab0f83254b251ba9bbb5675fb7eded661f2f
-ms.sourcegitcommit: 87981d92cddd039f65cba07c3f57ea6a12dd251a
+lab:
+  title: 演習 5 - 秘密度ラベルを管理する
+  module: Module 1 - Implement Information Protection
+ms.openlocfilehash: 07d4535e85a81edb22a7bd5f8831d9bfcb488732
+ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147155311"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "147694973"
 ---
 # <a name="lab-1---exercise-5---manage-sensitivity-labels"></a>ラボ 1 - 演習 5 - 秘密度ラベルを管理する
 
-このラボでは、Contoso Ltd. のシステム管理者である Joni Sherman のロールを実行します。 組織はドイツのレドニッツヘムバッハに拠点を置いており、現在、人事部のすべての従業員ドキュメントが組織の情報保護ポリシーの一部として秘密度ラベルが付けてあることを確認するための秘密度計画を実施しています。
+このラボでは、Contoso Ltd. のシステム管理者である Joni Sherman のロールを実行します。組織はドイツのレドニッツヘムバッハに拠点を置いており、現在、人事部のすべての従業員ドキュメントが組織の情報保護ポリシーの一部として秘密度ラベルが付けてあることを確認するための秘密度計画を実施しています。
 
 ### <a name="task-1-enable-support-for-sensitivity-labels"></a>タスク 1 秘密度ラベルのサポートを有効にする
 

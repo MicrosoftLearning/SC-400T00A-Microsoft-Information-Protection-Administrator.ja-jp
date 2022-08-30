@@ -1,10 +1,13 @@
 ---
-ms.openlocfilehash: 6aaa487eccab09f5627441ca0ac33b9bb20abb20
-ms.sourcegitcommit: c78ddb966a982b76e7f46fc17a42847f76d6e1a0
+lab:
+  title: 演習 3 - サービスベースの保持を構成する
+  module: Module 3 - Implement Data Lifecycle and Records Management
+ms.openlocfilehash: b531417b4335973f9c1e3ac0950f000fa1719eab
+ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154814"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "147694943"
 ---
 # <a name="lab-3---exercise-3---configure-service-based-retention"></a>ラボ 3 - 演習 3 - サービスベースの保持を構成する
 

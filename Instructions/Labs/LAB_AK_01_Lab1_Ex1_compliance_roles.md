@@ -1,10 +1,13 @@
 ---
-ms.openlocfilehash: 5a9f9ac211c2bb202406d336b38b852b2a7938ff
-ms.sourcegitcommit: 87981d92cddd039f65cba07c3f57ea6a12dd251a
+lab:
+  title: 演習 1 - コンプライアンス ロールを管理する
+  module: Module 1 - Implement Information Protection
+ms.openlocfilehash: e1624cf474ee4cf220bfa6cea0de3e57d428cf4f
+ms.sourcegitcommit: 9e722a2a59bb313fe16f6aad41aac3ebe1e1eda4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147155296"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "147693963"
 ---
 # <a name="lab-1---exercise-1---manage-compliance-roles"></a>ラボ 1 - 演習 1 - コンプライアンス ロールを管理する
 
