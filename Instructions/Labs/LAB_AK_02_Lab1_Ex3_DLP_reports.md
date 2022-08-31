@@ -1,12 +1,15 @@
 ---
-ms.openlocfilehash: 55e33ed310c3e272cfd1f9812b99bb8df2c5d53f
-ms.sourcegitcommit: 87981d92cddd039f65cba07c3f57ea6a12dd251a
+lab:
+  title: 演習 3 - DLP レポートを管理する
+  module: Module 2 - Implement Data Loss Prevention
+ms.openlocfilehash: 746ee7009944164eea61823432a6b81f0d03cbc3
+ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147155293"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "147694946"
 ---
-# <a name="lab-2---exercise-3---manage-dlp-reports"></a>ラボ 2 - 演習 3 - DLP レポートを管理する
+# <a name="lab-2---exercise-3---manage-dlp-reports"></a>ラボ 2 演習 3 - DLP レポートを管理する
 
 あなたは Contoso Ltd. のコンプライアンス管理者、Joni Sherman です。データ損失防止の目的で、組織の Microsoft 365 テナントを構成する任務を負っています。 Contoso Ltd. は米国で自動車運転教習を行っている企業です。あなたには機密の顧客情報がこの組織から漏えいしないようにする役目があります。 新しいコンプライアンス責任者が DLP レポートの確認を支援することが通知されます。
 

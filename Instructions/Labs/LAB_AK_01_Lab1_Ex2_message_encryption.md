@@ -1,10 +1,13 @@
 ---
-ms.openlocfilehash: 1fa5f311f0d3dc9f46e345da75ef20870ab88a3f
-ms.sourcegitcommit: 87981d92cddd039f65cba07c3f57ea6a12dd251a
+lab:
+  title: '演習 2: Microsoft Purview メッセージ暗号化を管理する'
+  module: Module 1 - Implement Information Protection
+ms.openlocfilehash: ef12c02196f9da1f7093790a0341143703e413b4
+ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147155314"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "147694955"
 ---
 # <a name="lab-1---exercise-2---manage-office-365-message-encryption"></a>ラボ 1 - 演習 2 - Office 365 Message Encryption を管理する
 
@@ -218,7 +221,7 @@ Office 365 Message Encryption での Google、Facebook などの海外の ID プ
 
 1. Outlook on the web の左上部から **[新規メッセージ]** を選択します。
 
-1. **[To]** に、テナント ドメインには存在しない、個人用またはその他サード パーティのメール アドレスを入力します。 「"*財務レポート*"」と件名に、「"*秘密の財務情報。*"」 と本文に入力します。
+1. **[To]** に、テナント ドメインには存在しない、個人用またはその他サード パーティのメール アドレスを入力します。 「*財務レポート*"」と件名に、「"*秘密の財務情報。*"」 と本文に入力します。
 
 1. **[送信]** を選択してメッセージを送信します。
 
