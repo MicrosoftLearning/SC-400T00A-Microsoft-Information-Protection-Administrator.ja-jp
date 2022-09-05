@@ -1,12 +1,15 @@
 ---
-ms.openlocfilehash: 7919442bc520d131fa869e44556eff1276b9c880
-ms.sourcegitcommit: c78ddb966a982b76e7f46fc17a42847f76d6e1a0
+lab:
+  title: 演習 5 - 回復を目的とした電子情報開示の使用
+  module: Module 3 - Implement Data Lifecycle and Records Management
+ms.openlocfilehash: 18e5cc590d10cdd35f2986a989b58fa07e4d472a
+ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154881"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "147694949"
 ---
-# <a name="lab-3---exercise-4---use-ediscovery-for-recovery"></a>ラボ 3 - 演習 4 - 回復を目的とした電子情報開示の使用
+# <a name="lab-3---exercise-5---use-ediscovery-for-recovery"></a>ラボ 3 - 演習 5 - 回復を目的とした電子情報開示の使用
 
 この演習では、Contoso Ltd. のコンプライアンス管理者である Joni Sherman のロールを実行します。 この組織はテキサスにあり、地元の法律を守るために保持ポリシーを実装する必要があります。 "Uniform Preservation of Private Business Records Act" (事業に関する非公開記録の統一保存に関する法律) では、記録を法律の下で違反行為とならずに破棄することができると規定されています。この法律を守るために、組織は、すべてのアイテムを組織内で 3 年間保持するための保持計画を作成しました。
 

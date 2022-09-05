@@ -1,12 +1,15 @@
 ---
-ms.openlocfilehash: ee57f2ea92721329bdb25ad524751f54c31cefd6
-ms.sourcegitcommit: c78ddb966a982b76e7f46fc17a42847f76d6e1a0
+lab:
+  title: 演習 6 - レコード管理を構成する
+  module: Module 3 - Implement Data Lifecycle and Records Management
+ms.openlocfilehash: 1d2e4a3980efe3d13bc98209d266b40c62a18871
+ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154882"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "147694931"
 ---
-# <a name="lab-3---exercise-5---configure-records-management"></a>ラボ 3 - 演習 5 - レコード管理の構成
+# <a name="lab-3---exercise-6---configure-records-management"></a>ラボ 3 - 演習 6 - レコード管理を構成する
 
 この演習では、Contoso Ltd. のコンプライアンス管理者である Joni Sherman のロールを実行します。組織に対する規制要件には、企業が保険料を検討する際は、従業員が提供する医療保険情報の信頼できるコピーが必要であるというものが含まれます。 あなたは、レコードが管理されていることを確認する仕事を任せられました。
 
