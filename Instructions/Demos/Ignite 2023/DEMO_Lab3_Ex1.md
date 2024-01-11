@@ -16,7 +16,7 @@ lab:
 
 1. 引き続き Client 1 VM (LON-CL1) に **lon-cl1\admin** アカウントでログインしている必要があります。
 
-1. Microsoft Edge で、**https://compliance.microsoft.com** に移動して、MOD 管理者 **admin@WWLxZZZZZZ.onmicrosoft.com** として Microsoft Purview ポータルにログインします。 管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
+1. Microsoft Edge で、Microsoft Purview コンプライアンス ポータル (**https://compliance.microsoft.com**) に移動して、**MOD 管理者** (admin@WWLxZZZZZZ.onmicrosoft.com) としてサインインします。 管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
 
 1. **[ロールとスコープ]** に移動し、ドロップダウンから **[アクセス許可]** を選択します。
 
@@ -44,7 +44,7 @@ lab:
 
 このタスクでは、Microsoft Purview ポータルでインサイダー リスク管理設定をカスタマイズします。 これにより、Joni Sherman は、組織内の潜在的なインサイダー リスクを効果的に管理し、機密情報のセキュリティを確保できます。
 
-1. **Microsoft Edge** で、**https://compliance.microsoft.com** に移動して、JoniS@WWLxZZZZZZ.onmicrosoft.com として Microsoft Purview ポータルにログインします。 Joni のパスワードは、ラボ ホスティング プロバイダーから支給されます。
+1. **Microsoft Edge** で、Microsoft Purview コンプライアンス ポータル (**https://compliance.microsoft.com**) に移動して、JoniS@WWLxZZZZZZ.onmicrosoft.com としてサインインします。 Joni のパスワードは、ラボ ホスティング プロバイダーから支給されます。
 
 1. 左側のナビゲーション バーから **[インサイダー リスク管理]** を選択します。
 
@@ -86,7 +86,7 @@ lab:
     - **[名前]**: Finance team
     - **[説明]**: Team members that manage financial operations, budgeting, and reporting
 
-1. **[次へ]** を選択します。
+1. [**次へ**] を選択します。
 
 1. **[メンバーの選択]** ページで、 **[+ メンバーの選択]** を選択します。
 
@@ -125,7 +125,7 @@ lab:
     - **[名前]**: Financial Data Protection
     - **[説明]**: Sensitive financial data access monitoring
 
-1. **[次へ]** を選択します。
+1. [**次へ**] を選択します。
 
 1. **[ユーザーとグループの選択]** ページで、 **[すべてのユーザーとグループを含める]** を選択したままにして、 **[次へ]** を選択します。
 
