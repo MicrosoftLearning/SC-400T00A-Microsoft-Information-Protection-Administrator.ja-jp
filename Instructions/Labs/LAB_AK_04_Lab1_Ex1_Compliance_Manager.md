@@ -6,9 +6,9 @@ lab:
 
 ## WWL テナント - 使用条件
 
-講師による指導付きトレーニング配信の一環としてテナントを提供されている場合は、講師による指導付きトレーニングでハンズオン ラボをサポートする目的でテナントを利用できることに注意してください。
+講師が指導するトレーニング配信の一環としてテナントを提供されている場合は、講師が指導するトレーニングでハンズオンラボをサポートする目的でテナントを利用できることに注意してください。
 
-テナントを共有したり、ハンズオン ラボ以外の目的で使用したりしないでください。 このコースで使われるテナントは試用版テナントであり、クラスが終了し、拡張機能の対象となっていない場合は、使用したりアクセスしたりすることはできません。
+テナントを共有したり、ハンズオンラボ以外の目的で使用したりしないでください。 このコースで使われるテナントは試用版テナントであり、クラスが終了し、拡張機能の対象となっていない場合は、使用したりアクセスしたりすることはできません。
 
 テナントを有料サブスクリプションに変換することはできません。 このコースの一環として取得したテナントは Microsoft Corporation の財産のままであり、当社はいつでもアクセス権とリポジトリを取得する権利を留保します。
 
@@ -24,7 +24,7 @@ lab:
 
 1. Client 1 VM (LON-CL1) に **lon-cl1\admin** アカウントでログインします。 パスワードは、ラボ ホスティング プロバイダーから支給されます。
 
-1. **Microsoft Edge** で、アドレス バーを選択し、**https://compliance.microsoft.com** に移動して、Microsoft Purview コンプライアンス ポータルに **MOD 管理者** (admin@WWLxZZZZZZ.onmicrosoft.com) としてログインします (ZZZZZZ は、ラボ ホスティング プロバイダーによって提供された固有のテナント ID)。 管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
+1. **Microsoft Edge** で、アドレス バーを選択し、**`https://compliance.microsoft.com`** に移動して、Microsoft Purview コンプライアンス ポータルに **MOD 管理者** (admin@WWLxZZZZZZ.onmicrosoft.com) としてログインします (ZZZZZZ は、ラボ ホスティング プロバイダーによって提供された固有のテナント ID)。 管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
 
 1. 左側のナビゲーション ウィンドウで、 **[ロールとスコープ]** のドロップダウンを展開し、 **[アクセス許可]** を選択します。
 
@@ -66,7 +66,7 @@ lab:
 
 このタスクでは、Microsoft Purview コンプライアンス ポータル内のコンプライアンス マネージャーの機能の詳細を確認します。
 
-1. **Microsoft Edge** を開き、 **https://compliance.microsoft.com** に移動します。 Microsoft Purview コンプライアンス ポータルに **Joni Sherman** としてログインします。
+1. **Microsoft Edge** を開き、 **`https://compliance.microsoft.com`** に移動します。 Microsoft Purview コンプライアンス ポータルに **Joni Sherman** としてログインします。
 
 1. 左ナビゲーション ウィンドウから、 **[コンプライアンス マネージャー]** を選択します。
 
@@ -154,7 +154,7 @@ lab:
 
 1. Client 1 VM (LON-CL1) には **lon-cl1\admin** アカウントでログインし、Microsoft 365 には Joni Sherman としてログインしておく必要があります。 画面の右上の Joni Sherman の写真を選択して **[サインアウト]** を選択し、そのアカウントからサインアウトします。
 
-1. **Microsoft Edge** を開き、 **https://outlook.office.com/** に移動します。
+1. **Microsoft Edge** を開き、 **`https://outlook.office.com/`** に移動します。
 
 1. Megan Bowen のアカウント MeganB@WWLxZZZZZZ.onmicrosoft.com としてサインインします (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。
 
@@ -198,7 +198,7 @@ lab:
 
 1. Client 1 VM (LON-CL1) には **lon-cl1\admin** アカウントでログインし、Microsoft 365 には Megan Bowen としてログインしておく必要があります。 画面の右上の Megan の写真を選択して **[サインアウト]** を選択し、そのアカウントからサインアウトします。
 
-1. **Microsoft Edge** を開き、 **https://compliance.microsoft.com/** に移動します。
+1. **Microsoft Edge** を開き、 **`https://compliance.microsoft.com/`** に移動します。
 
 1. Joni Sherman のアカウント JoniS@WWLxZZZZZZ.onmicrosoft.com としてサインインします (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。
 

@@ -16,7 +16,7 @@ lab:
 
 1. Client 1 VM (LON-CL1) に **lon-cl1\admin** アカウントでログインします。
 
-1. Microsoft Edge で、 **https://compliance.microsoft.com** に移動し、Microsoft Purview ポータルに MOD 管理者 **admin@WWLxZZZZZZ.onmicrosoft.com** としてログインします (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。 管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
+1. Microsoft Edge で、 **`https://compliance.microsoft.com`** に移動し、Microsoft Purview ポータルに MOD 管理者 **admin@WWLxZZZZZZ.onmicrosoft.com** としてログインします (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。 管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
 
 1. **[ロールとスコープ]** に移動し、ドロップダウンから **[アクセス許可]** を選択します。
 
@@ -44,7 +44,7 @@ lab:
 
 このタスクでは、Microsoft Purview ポータルでインサイダー リスク管理設定をカスタマイズします。 これにより、Joni Sherman は、組織内の潜在的なインサイダー リスクを効果的に管理し、機密情報のセキュリティを確保できます。
 
-1. **Microsoft Edge** で、 **https://compliance.microsoft.com** に移動し、Microsoft Purview ポータルに JoniS@WWLxZZZZZZ.onmicrosoft.com としてログインします (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。
+1. **Microsoft Edge** で、 **`https://compliance.microsoft.com`** に移動し、Microsoft Purview ポータルに JoniS@WWLxZZZZZZ.onmicrosoft.com としてログインします (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。
 
 1. 左側のナビゲーション バーから **[インサイダー リスク管理]** を選択します。
 
