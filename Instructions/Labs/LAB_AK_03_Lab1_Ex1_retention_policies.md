@@ -162,119 +162,119 @@ PowerShell を使用して同じ保持ポリシーを作成します
 
 PowerShell を使って保持期間を 3 年に設定した保持ポリシーを正常に作成しました。
 
-<!-- ## Task 4 – Create Retention Policy with adaptive scope
+## タスク 4 – アダプティブ スコープを使用してアイテム保持ポリシーを作成する
 
-In this exercise you will create a retention policy for the finance and legal department. The purpose of the policy is to comply with the law, retaining all legal related documents for 5 years. First you will create an adaptive scope including the legal and the retail department, then you will create a retention policy using this scope.
+この演習では、財務部門と法務部門のアイテム保持ポリシーを作成します。 本ポリシーの目的は、法律に準拠し、法律に関連するすべてのドキュメントを 5 年間保持することです。 まず、法務部門と小売部門を含むアダプティブ スコープを作成し、次に、このスコープを使用してアイテム保持ポリシーを作成します。
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. Client 1 VM (LON-CL1) には **lon-cl1\admin** アカウントでログインし、Microsoft 365 には **Joni Sherman** としてログインしておく必要があります。
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
+1. **Microsoft Edge** で、Microsoft Purview ポータルのタブがまだ開かれているはずです。 その場合は、それを選択して次の手順に進みます。 閉じた場合は、新しいタブで **`https://compliance.microsoft.com`** に移動します。
 
-1. In the **Microsoft Purview** portal on the left navigation pane expand **Roles & scopes** then select **Adaptive scopes**.
+1. 左側のナビゲーション ウィンドウの **Microsoft Purview** ポータルで、 **[ロールとスコープ]** を展開し、 **[アダプティブ スコープ]** を選択します。
 
-1. On the **Adaptive scopes** page select **+ Create scope**.
+1. **[アダプティブ スコープ]** ページで、 **[+ スコープを作成]** を選択します。
 
-1. On the **Name your adaptive policy scope** page input:
+1. **[アダプティブ ポリシー スコープの名前を設定]** ページで、次を入力します。
 
-    - **Name**: Legal Documents Retention
-    - **Description**: Retention for legal related documents
+    - **[名前]** : 法的ドキュメントの保持
+    - **[説明]** : 法律に関連するすドキュメントの保持
 
-1. Select **Next**.
+1. [**次へ**] を選択します。
 
-1. On the **Assign admin unit** page select **Next**.
+1. **[管理単位の割り当て]** ページで、 **[次へ]** を選択します。
 
-1. On the **What type of scope do you want to create?** page select **Users** then select **Next**.
+1. **[作成するスコープの種類]** ページで、 **[ユーザー]** を選択し、 **[次へ]** を選択します。
 
-1. On the **Create the query to define users** page, under **User attributes** select the drop-down menu for **Attribute** then select **Department**.
+1. **[ユーザーを定義するクエリの作成]** ページの **[ユーザー属性]** で、 **[属性]** のドロップダウン メニューを選択し、 **[部署]** を選択します。
 
-1. Directly next to the attribute field select **is equal to** as the operator.
+1. 属性フィールドのすぐ横で、演算子として **[が次の値に等しい]** を選択します。
 
-1. Input **Legal** in the **Value** field.
+1. **[値]** フィールドに「**法的**」と入力します。
 
-1. To add a second attribute, select **+ Add attribute** on the **Create the query to define users** page.
+1. 2 つ目の属性を追加するには、 **[ユーザーを定義するクエリの作成]** ページで **[+ 属性を追加]** を選択します。
 
-1. For the **Query operator**, **Attribute**, **Operator**, and **Value** input:
+1. **[クエリ演算子]** 、 **[属性]** 、 **[演算子]** 、 **[値]** に次を入力します。
 
-   - **Query operator**: Or
-   - **Attribute**: Department
-   - **Operator**: is equal to
-   - **Value**: Retail
+   - **クエリ演算子**:もしくは
+   - **属性**:部署
+   - **演算子**: が次の値に等しい
+   - **値**: 小売
 
-1. Ensure the checkboxes are selected next to each attribute then select **Next**.
+1. 各属性の横にあるチェック ボックスがオンになっていることを確認し、 **[次へ]** を選択します。
 
-1. On the **Review and finish** page select **Submit**.
+1. **[確認と完了]** ページで、**[送信]** を選択します。
 
-1. On the **Your scope was created page** select **Done**.
+1. **[Your scope was created] (スコープが作成されました) ページ**で、 **[完了]** を選択します。
 
-1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data lifecycle management** then select **Microsoft 365**.
+1. **Microsoft Purview** ポータルの左側のナビゲーション ウィンドウで、**[データ ライフサイクル管理]** を展開して **[Microsoft 365]** を選択します。
 
-1. On the **Data lifecycle management** page select the **Retention policies** tab then select **+ New retention policy**.
+1. **[データ ライフサイクル管理]** ページの **[保持ポリシー]** タブを選択し、 **[+ 保持ポリシーの新規作成]** を選択します。
 
-1. On the **Name your retention policy** page input:
+1. **[保持ポリシーの名前を設定]** ページで以下を入力します。
 
-    - **Name**: Legal Data Retention
-    - **Description**: Retention of all documents within the legal and retail departments.
+    - **[名前]** : 法的データの保持
+    - **[説明]** : 法務部門と小売部門のすべてのドキュメントの保持。
 
-1. Select **Next**.
+1. [**次へ**] を選択します。
 
-1. On the **Policy Scope** page select **Next**.
+1. **[Policy Scope] (ポリシー スコープ)** ページで、**[次へ]** を選択します。
 
-1. On the **Choose the type of retention policy to create** page select **Adaptive** then select **Next**.
+1. **[作成するアイテム保持ポリシーの種類を選択する]** ページで、 **[アダプティブ]** を選択し、 **[次へ]** を選択します。
 
-1. On the **Choose adaptive policy scopes and locations** page select **+ Add scopes**.
+1. **[アダプティブ ポリシーのスコープと場所の選択]** ページで、 **[+ スコープを追加]** を選択します。
 
-1. In the right flyout **Choose adaptive policy scopes** page select the checkbox for **Legal Documents Retention** then select the **Add** button.
+1. 右側のポップアップ **[アダプティブ ポリシー スコープの選択]** ページで、 **[法的ドキュメントの保持]** のチェック ボックスをオンにして、 **[追加]** ボタンを選択します。
 
-1. Back on the **Choose locations to apply the policy** enable:
+1. **[ポリシーを適用する場所の選択]** に戻り、次を有効にします。
 
-    - **Exchange mailboxes**
-    - **OneDrive accounts**
-    - Leave all other locations disabled.
+    - **Exchange メールボックス**
+    - **OneDrive アカウント**
+    - 他のすべての場所は無効のままにします。
 
-1. Select **Next**.
+1. [**次へ**] を選択します。
 
-1. On the **Decide if you want to retain content, delete it, or both** page, for the **Retain items for a specific period** section input:
+1. **[コンテンツを保持するか、削除するか、またはその両方を行うかを決定する]** ページの **[特定の期間のアイテムを保持する]** セクションで、次を入力します。
 
-    - **Retain items for a specific period**: 5 years
-    - **Start the retention period based on**: When items were created
-    - **At the end of the retention period**: Do nothing
+    - **アイテムを特定の期間保持する**:5 年
+    - **保持期間開始の条件**:アイテムが作成されたとき
+    - **[保持期間の終了時]** :何もしない
 
-1. Select **Next**.
+1. [**次へ**] を選択します。
 
-1. On the **Review and finish** page select **Submit**.
+1. **[確認と完了]** ページで、**[送信]** を選択します。
 
-1. Once your policy is created, select the **Done** button.
+1. ポリシーが作成されたら、**[完了]** を選択します。
 
-1. On the **You successfully created a retention policy** page select **Done**.
+1. **[You successfully created a retention policy] (アイテム保持ポリシーが正常に作成されました)** ページで、**[完了]** を選択します。
 
-You have successfully applied an adaptive scope to a retention policy.
+アダプティブ スコープがアイテム保持ポリシーに正常に適用されました。
 
-## Task 5 – Test adaptive scope policy
+## タスク 5 – アダプティブ スコープ ポリシーをテストする
 
-In this exercise you will verify the users affected by the adaptive scope and test the new adaptive retention policy.
+この演習では、アダプティブ スコープの影響を受けるユーザーを確認し、新しいアダプティブ アイテム保持ポリシーをテストします。
 
->**Note**: When you create and submit a retention policy, it can take up to seven days for the retention policy to be applied.
+>**注**: アイテム保持ポリシーを作成して送信すると、アイテム保持ポリシーが適用されるまでに最大 7 日かかることがあります。
 
-1. To review the details of the adaptive scope retention policy, logged into  **lon-cl1\admin**, open a PowerShell window by selecting the Windows button with the right mouse button and then select Windows PowerShell.
+1. アダプティブ スコープ アイテム保持ポリシーの詳細を確認するには、**lon-cl1\admin** にログインし、マウスの右ボタンで Windows ボタンを選択して PowerShell ウィンドウを開き、[Windows PowerShell] を選択します。
 
-1. Connect to the Security & Compliance Center in your tenant with the following cmdlet:
+1. 次のコマンドレットを使用して、テナントのセキュリティ/コンプライアンス センターに接続します。
 
     ```powershell
     Connect-IPPSSession
     ```
 
-1. If prompted with a sign in dialog box, sign in with Joni Sherman's account,  JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. サインインを要求するダイアログ ボックスが表示された場合は、Joni Sherman のアカウント (JoniS@WWLxZZZZZZ.onmicrosoft.com) でサインインします (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。 管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
 
-1. Run the following cmdlet to view all details of the adaptive scope policy:
+1. 次のコマンドレットを実行して、アダプティブ スコープ ポリシーのすべての詳細を表示します。
 
     ```powershell
     Get-RetentionCompliancePolicy -Identity "Legal Data Retention"     -DistributionDetail | Format-List
     ```
 
-1. Review the details. Certain parameters should have following statuses:
+1. 詳細を確認します。 特定のパラメーターには、次の状態が必要です。
 
-    - **Enabled**: True
-    - **Mode**: Enforce
-    - **DistributionStatus**: Success
+    - **有効**: 正
+    - **[モード]** :強制
+    - **DistributionStatus**:Success
 
-You have verified the success of your adaptive scope.-->
+アダプティブ スコープが正常であることを確認できました。
