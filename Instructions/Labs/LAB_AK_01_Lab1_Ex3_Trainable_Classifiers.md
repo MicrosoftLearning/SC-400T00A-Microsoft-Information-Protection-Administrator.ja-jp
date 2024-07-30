@@ -6,168 +6,123 @@ lab:
 
 # ラボ 1: 演習 3: トレーニング可能な分類器を管理する
 
-Contoso Ltd. のテナントには、"Sales and Marketing" という名前の SharePoint サイト コレクションが含まれています。このコレクションは、いくつかの財務関連のドキュメントやレポートを保存するために、今後使用されます。 このようなドキュメントの性質上、これらのファイルを認識してラベルを付けるためのトレーニング可能な分類器を作成する必要があります。 この目的のために、カスタムのトレーニング可能な分類器をアクティブにして、新しい分類器を作成します。
+Contoso Ltd. は、"Sales and Marketing" SharePoint サイトに格納されている財務ドキュメントとレポートが適切に分類されていることを確認する必要があります。 これを実現するには、これらのファイルを認識してラベル付けするためのトレーニング可能な分類子を作成する必要があります。
 
-**重要!** :テナントでトレーニング可能な分類器をアクティブ化した後、カスタムのトレーニング可能な分類器が作れるようになるまでに **7 ～ 14 日**かかります。 新しいトレーニング可能な分類器を作成するボタンは、アクティブ化の処理がすべて終了するまで利用できません。  したがって、**タスク 1 のみを実行できるようになります**。 タスク 2 と 3 を完了したい場合は、トレーニング可能な分類器のセットアップの処理が完了するまで待つ必要があります。  これらのラボの手順は、GitHub.com で入手できます。 タスク 1 の実行に使用している Microsoft 365 テナントは引き続きアクティブである必要があります。
+## タスク 1 – トレーニング可能な分類子を作成する
 
-## タスク 1 – トレーニング可能な分類器をアクティブ化する
-
-トレーニング可能な分類器を作成する前に、テナントでその機能をアクティブ化する必要があります。 全体管理者をアクティブ化するには、権限が必要となります。まず Joni Sherman のアカウントからサインアウトし、MOD 管理者を使って、その機能をアクティブ化します。
+このタスクでは、テナントでトレーニング可能な分類子をアクティブ化して、カスタム分類子の作成を有効にします。
 
 1. Client 1 VM (LON-CL1) には **lon-cl1\admin** アカウントでログインし、Microsoft 365 には **Joni Sherman** としてログインしておく必要があります。
 
-1. 右上隅の画像を選択して Joni Sherman のアカウントからサインアウトし、**[サインアウト]** を選択します。
-
-1. ブラウザー画面を閉じ、新しいブラウザー画面を開きます。
-
 1. **Microsoft Edge** で、 **`https://compliance.microsoft.com`** に移動します。
 
-1. **[アカウントを選択する]** ページが表示されたら、 **[別のアカウントを使用する]** を選択し、**MOD 管理者** admin@WWLxZZZZZZ.onmicrosoft.com としてサインインします (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。  管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
+1. 左側のナビゲーション ウィンドウで **[データ分類]** を展開し、**[分類子]** を選択します。
 
-1. 左側のナビゲーション ウィンドウから **[データ分類]** に移動して展開し、**[分類子]** を選択します。
+1. **[分類子]** ページで、**[トレーニング可能な分類子]** タブが既に選択されている必要があります。
 
-1. 上部のペインから **[トレーニング可能な分類器]** が既定で選択されます。
+2. **[+ トレーニング可能な分類器を作成する]** を選択し、新しい分類器を作成します。
 
-1. **[トレーニング可能な分類器の使用を開始する]** ダイアログで、**[Start scanning process] (スキャン処理を開始)** を選択します。
+1. **[トレーニング可能な分類器の名前と説明]** ページで次の情報を入力します。
 
-1. ブラウザー ウィンドウを更新します。
+    - **名前**: `Contoso Company Data`
+    - **説明**: `Trainable classifier for company data produced and stored by Contoso Ltd.`
 
-1. ウィンドウ上部のバナーに、"**トレーニング可能な分類器を作成する準備として、組織内のコンテンツの種類を把握するのに役立つ分析を生成するために、コンテンツの場所をスキャンしています。この処理が完了するまでに 7 日から 14 日かかります**" というメッセージが表示されるので、目を通しておきます。
+1. [**次へ**] を選択します。
 
-1. クライアントを開いたままにしておきます。
+1. **[正のサンプル コンテンツのソース**] で、**[ サイトの選択**] を選択します。
 
-これでテナントにあるトレーニング可能な分類器がアクティブ化されました。 **[トレーニング可能な分類器を作成する]** ボタンが使用できるようになるまでに 7 から 14 日かかります。  このタスクを授業形式で行っていて、トレーニング可能な分類器が処理を終了するまで 7 ～ 14 日待つことができない場合、後でトレーニング可能な分類器の処理が完了してから支給されるテナントにログインして、この演習のタスクの残りを実行しても構いません。  テナントはアクティブのままであるはずです。
+1. 右側の**SharePoint サイトの追加**のポップアップ ページで、次の SharePoint サイトを選択します。
 
-## タスク 2 – トレーニング可能な分類器を作成する (オプションのラボ タスク)
+    - Mark8ProjectTeam
 
-トレーニング可能な分類器がアクティブ化されると、**[トレーニング可能な分類器を作成する]** ボタンを使用できるようになり、カスタム分類器を新しく作成できるようになります。 このタスクで、Joni は、Contoso Ltd.が作成し、保存した典型的なデータを特定するために、新しいトレーニング可能な分類器を作成し、様々な SharePoint サイトを選択します。
+1. ポップアップ ページの下部にある **[追加]** を選択します。
 
-1. Client 1 VM (LON-CL1) には **lon-cl1\admin** アカウントでログインし、Microsoft 365 には **MOD 管理者**としてログインしておく必要があります。
+1. **[正のサンプル コンテンツのソース**] ページに戻り **[次へ]** を選択します。
 
-1. 右上隅の MA を選択して MOD 管理者のアカウントからサインアウトし、**[サインアウト]** を選択します。
+1. **[負のサンプル コンテンツの ソース]** ページで、次の SharePoint サイトを選択します。
 
-1. ブラウザー画面を閉じ、新しいブラウザー画面を開きます。
+    - HR
 
-1. **Microsoft Edge** で、 **`https://compliance.microsoft.com`** に移動します。
+1. ポップアップ ページの下部にある **[追加]** を選択します。
 
-1. **[アカウントを選択する]** ページが表示されたら、**[他のアカウントを使用する]** を選択し、**"Joni Sherman"** としてサインインします。 JoniS@WWLxZZZZZZ.onmicrosoft.com (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。  Joni のパスワードは、ラボ ホスティング プロバイダーから支給されます。
+1. **[負のサンプル コンテンツのソース**] ページに戻り **[次へ]** を選択します。
 
-1. 左側のナビゲーション ウィンドウから **[データ分類]** に移動します。
+1. **[分類子をレビューして作成しサンプル コンテンツの処理を開始する]** で **[トレーニング可能な分類子の作成]** を選択します。
 
-1. 上部のウィンドウから**トレーニング可能な分類器**を選択します。
+1. **[分類子のトレーニング中です]** ページで、**[Done]** を選択します。
 
-1. **[+ トレーニング可能な分類器を作成する]** を選択し、新しい分類器を作成します。
+選択した SharePoint サイトのドキュメントとファイルは現在分析されています。分析には最大で48 時間かかります。
 
-1. **[トレーニング可能な分類器の名前と説明の設定]** ページで次の情報を入力します。
+<!---
+## Task 3 – Publish a trainable classifier (optional lab task)
 
-    - **[名前]** : Contoso の企業データ
-    - **[説明]** : Contoso Ltd. が生成し、保存する企業データのトレーニング可能な分類器
+After the new trainable classifier was created and the initial analysis of the documents and files is done, the manual training process needs to be performed. In this task, Joni will start the calibration of the classifier to achieve the required accuracy for publishing.
 
-1. **[次へ]** を選択します。
+1. You should still be logged into your Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. **[サイトの選択]** を選択して、右側のウィンドウを開きます。
+1. In your browser window, you are in the Microsoft Purview portal at **Data classification** in the **Trainable classifiers** tab.
 
-1. 次の SharePoint サイトを選択します。
+1. Select the trainable classifier with the name **Contoso Company Data** of the type **Custom** to open the detailed settings.
 
-    - **コミュニケーション サイト**
+1. Review the **Details** tab on the right side, including the source site for the classifier, the number of processed items and the **Status**, which is in **Need test items**.
+
+1. To add items for training the classifier, select **Add items to test** to open the right side selection pane.
+
+1. In the **Choose sites with items to test** pane, select **+ Choose sites**.
+
+1. Select the following SharePoint sites:
+
+    - **Communication site**
     - **News @ Contoso**
     - **Contoso Web 1**
-    - **ブランド**
+    - **Brand**
     - **Digital Initiative Public Relations**
     - **Work @ Contoso**
-    - **売上およびマーケティング**
+    - **Sales and Marketing**
     - **Contoso Landings**
-    - **マーク 8 プロジェクト チーム**
-    - **人事**
-    - **操作**
-    - **小売**
+    - **Mark 8 Project Team**
+    - **HR**
+    - **Operations**
+    - **Retail**
     - **PointPublishing Hub Site**
-    - **チーム サイト**
+    - **Team Site**
     - **Leadership Team**
-    - **コミュニティ**
+    - **Community**
     - **Give @ Contoso**
     - **Benefits @ Contoso**
     - **Learn @ Contoso**
     - **Campaigns - Events**
 
-1. 選択されたサイトがリスト内で表示されるまで待ち、**[次へ]** を選択します。
+1. Select **Add**.
 
-1. 設定を確認し、**[トレーニング可能な分類器を作成する]** を選択します。
+1. Wait until the sites are shown in the list and select **Add**.
 
-1. **[トレーニング可能な分類器が作成されました]** というメッセージが表示されたら、**[完了]** を選択します。
+1. When the **Overview** section is updated, a new tab is shown in the top of the window.
 
-1. ここから先に進むには 1 時間から 24 時間かかります。 ブラウザーは開いたままにしておきます。
+1. Select **Tested items to review** from the top pane.
 
-選択した SharePoint サイトのドキュメントとファイルは現在分析されています。分析には最大で 24 時間かかります。
+1. It will take between 15 to 30 minutes until first results are ready for review. Refresh the browser window if no files are shown in the list, until data is available.
 
-## タスク 3 – トレーニング可能な分類器を公開する (オプションのラボ タスク)
-新しいトレーニング可能な分類器が作成され、ドキュメントとファイルの初期分析が終わった後は、手動のトレーニング プロセスの実施が必要です。 このタスクでは、Joni は分析器のキャリブレーションを開始し、公開に必要な精度を達成します。
+1. Select the name of the first file from the list to open the preview window.
 
-1. Client 1 VM (LON-CL1) には **lon-cl1\admin** アカウントでログインし、Microsoft 365 には **Joni Sherman** としてログインしておく必要があります。
+1. When the **Prediction** row is equal to **Match**, the file was identified as a match for the classifier. Below the preview window, a message **We predict this item "matched" this classifier.** is shown. Select **Match** to approve the automatic classification.
 
-1. ブラウザー ウィンドウでは、Microsoft Purview ポータルの **[トレーニング可能な分類器]** タブで **[データ分類]** が開いています。
+1. When the **Prediction** row is equal to **Not a match**, the file was identified not as a match for the classifier. Below the preview window, a message **We predict this item "does not match" this classifier.** is shown. Select **Not a match** to approve the automatic classification.
 
-1. 種類が **[カスタム]** の、**"Contoso の企業データ"** という名前のトレーニング可能な分類器を選択し、詳細な設定を開きます。
+1. Proceed with all items in the list and approve the automatic classification. After all items have been reviewed, select **Overview** from the top pane and **Tested items to review** again, to load the next set of items for review.
 
-1. 右側の **[詳細]** タブを確認します。分類器のソース サイト、処理された項目の数、**[テスト アイテムが必要です]** の **[状態]** などを確認してください。
+1. For each 30 reviewed items an **Auto-retrain performed** window is shown. Select **OK** and proceed with the previous steps, until no items for review are left.
 
-1. 分類器のトレーニングのためのアイテムを追加するには、**[テストにアイテムを追加]** を選択して、右側の選択ウィンドウを開きます。
+1. After sufficient items are reviewed, the **Publish** button in the upper right gets available. Select it as soon it is available.
 
-1. **[テストするアイテムのあるサイトを選ぶ]** ウィンドウで **[+ サイトの選択]** を選択します。
+1. In the **Publish classifier** window, select **Yes** to publish the classifier.
 
-1. 次の SharePoint サイトを選択します。
+1. When the right side pane with **Your trainable classifier has been published** is displayed, the trainable classifier was successfully published.
 
-    - **コミュニケーション サイト**
-    - **News @ Contoso**
-    - **Contoso Web 1**
-    - **ブランド**
-    - **Digital Initiative Public Relations**
-    - **Work @ Contoso**
-    - **売上およびマーケティング**
-    - **Contoso Landings**
-    - **マーク 8 プロジェクト チーム**
-    - **人事**
-    - **操作**
-    - **小売**
-    - **PointPublishing Hub Site**
-    - **チーム サイト**
-    - **Leadership Team**
-    - **コミュニティ**
-    - **Give @ Contoso**
-    - **Benefits @ Contoso**
-    - **Learn @ Contoso**
-    - **Campaigns - Events**
+1. Close the right side pane with the **X** in the upper right.
 
-1. **[追加]** を選択します。
+1. Back at the main site, the custom classifier was moved to **Published** and the **Status** has been changed to **Ready to use**.
 
-1. サイトがリスト内で表示されるまで待ち、**[追加]** を選択します。
+1. Leave the browser window open.
 
-1. **[概要]** セクションが更新されると、新しいタブがウィンドウの上部に表示されます。
-
-1. 上部のウィンドウから **[レビューが必要なテスト済みアイテム]** を選択します。
-
-1. 最初の結果が閲覧できるまでには 15 ～ 30 分かかります。 リストにファイルが表示されていない場合、データが表示されるまで、ブラウザー画面を更新します。
-
-1. リストから最初のファイルの名前を選択し、プレビュー ウィンドウを開きます。
-
-1. **[予測]** 行が **[一致]** と等しい場合、ファイルは分類器に一致するとして特定されます。 プレビュー ウィンドウの下に、 **"We predict this item "matched" this classifier." (このアイテムはこの分類器に "一致した" と予測します。)** というメッセージ が表示されます。 **[一致]** を選択して、自動分類を承認します。
-
-1. **[予測]** 行が **[一致していません]** と等しい場合、ファイルは分類器に一致しないものとして特定されます。 プレビュー ウィンドウの下に、"**We predict this item "does not match" this classifier." (このアイテムはこの分類器に "一致しない" と予測します。)** というメッセージ が表示されます。 **[一致していません]** を選択してを選択して、自動分類を承認します。
-
-1. リスト内のすべてのアイテムにこの作業を行って、自動分類を承認します。 すべてのアイテムを確認したら、上部のウィンドウから **[概要]** を選択し、もう一度 **[レビューが必要なテスト済みアイテム]** を選択し、レビューする次のセットのアイテムを読み込みます。
-
-1. レビューしたアイテム 30 個ごとに、**[自動再トレーニングが実行されました]** ウィンドウが表示されます。 **[OK]** を選択して、レビューするアイテムがなくなるまで、前の手順に従って処理を行います。
-
-1. 十分にアイテムをレビューしたら、右上で **[公開]** ボタンが利用できるようになります。 利用できるようになり次第選択してください。
-
-1. **[分類器を発行]** ウィンドウで、**[はい]** を選択し、分類器を公開します。
-
-1. 右側のウィンドウに **[トレーニング可能な分類器が発行されました]** が表示されたら、トレーニング可能な分類器は公開されています。
-
-1. 右側のウィンドウを右上の **[X]** で閉じます。
-
-1. メインサイトに戻ると、カスタムの分類器は **[公開済み]** に移動し、**[状態]** は **[使用可能]** に変更されています。
-
-1. ブラウザー画面は開いたままにします。
-
-Contoso Ltd. の既存の SharePoint サイトに保存されたファイルに合致する、トレーニング可能なカスタムの分類器が作成し、トレーニングし、公開されました。
+You have successfully created, trained, and published a custom trainable classifier that matches the files stored on the existing SharePoint sites of Contoso Ltd.
