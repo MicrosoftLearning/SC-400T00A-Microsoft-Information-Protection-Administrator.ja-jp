@@ -26,43 +26,7 @@ Contoso Ltd. のコンプライアンス管理者である Joni は、Microsoft 
 
     >**注:** この変更が有効になるには数時間かかる場合があります。
 
-## タスク 2: Microsoft Teams で情報バリアの管理同意を有効にする
-
-このタスクでは、Microsoft Teams で情報バリア (IB) の管理同意を有効にします。 この構成では、Teams チャネルなどのグループから IB に準拠していないユーザーを削除できるようにすることで、コンプライアンスを確保します。
-
-1. マウスの右ボタンで Windows ボタンを選択して昇格された PowerShell ウィンドウを開き、 **[Windows PowerShell (管理者)]** を選択します。
-
-1. **[ユーザー アカウント制御]** ウィンドウで、**[はい]** を選択して確定します。
-
-1. 次のコマンドレットを入力して、最新バージョンの Azure AD モジュールをインストールしてください。
-
-    ```powershell
-    Install-Module AzureAD
-    ```
-
-1. NuGet プロバイダー セキュリティ ダイアログで、[はい] を示す **[Y]** を選択して確定し、**Enter** キーを押します。 この処理は、完了するまでに数秒かかる場合があります。
-
-1. 信頼されていないレポジトリ セキュリティ ダイアログで、[はい] を示す **[Y]** を選択して確定し、**Enter** キーを押します。  この処理は、完了するまでに数秒かかる場合があります。
-
-1. 次の PowerShell コマンドレットを実行します。
-
-    ````powershell
-    Connect-AzureAD -Tenant "WWLxZZZZZZ.onmicrosoft.com"
-    $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-    $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
-    if ($sp -eq $null) { New-AzureADServicePrincipal -AppId $appId }
-    Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
-    ````
-
-    >**注:**  必ず ZZZZZZ を ZZZZZZ.onmicrosoft.com に更新してください。 ZZZZZZ はラボ ホスティング プロバイダーから支給された一意のテナント ID です。 テナント ID には完全修飾ドメイン名が必要です。
-
-1. ダイアログが表示されたら、MOD 管理者アカウントでログインしてください
-
-1. **[要求されたアクセス許可]** ダイアログボックスで情報を確認し、 **[同意する]** を選択してください。
-
-Azure AD モジュールを正常にインストールし、必要なアクセス許可を付与し、要求されたアクセス許可を受け入れたので、PowerShell を使用して構成を続行できます。
-
-## タスク 3: 組織内のユーザーをセグメント化する
+## タスク 2: 組織内のユーザーをセグメント化する
 
 このタスクでは、PowerShell を使用して Security & Compliance モジュールに接続し、**Legal** および **Marketing** 部門の組織セグメントを作成します。
 
@@ -96,7 +60,7 @@ Azure AD モジュールを正常にインストールし、必要なアクセ�
 
 Security & Compliance PowerShell に正常に接続し、Legal および Marketing 部門の組織セグメントを作成し、Get-OrganizationSegment コマンドレットを使用してセグメントを表示しました。
 
-## タスク 4: 情報バリア ポリシーを作成する
+## タスク 3: 情報バリア ポリシーを作成する
 
 このタスクでは、PowerShell を使用して情報バリア ポリシーを作成し、Legal と Marketing 部門間の通信をブロックします。
 
@@ -126,7 +90,7 @@ Security & Compliance PowerShell に正常に接続し、Legal および Marketi
 
 PowerShell を使用して Legal-Marketing と Marketing-Legal 情報バリア ポリシーを正常に作成し、Get-InformationBarrierPolicy コマンドレットを実行して、その状態がアクティブであることを確認しました。
 
-## タスク 5: 情報バリア ポリシーを適用する
+## タスク 4: 情報バリア ポリシーを適用する
 
 このタスクでは、PowerShell を使用してアクティブな情報バリア ポリシーを適用し、アプリケーションの状態をチェックします。
 
