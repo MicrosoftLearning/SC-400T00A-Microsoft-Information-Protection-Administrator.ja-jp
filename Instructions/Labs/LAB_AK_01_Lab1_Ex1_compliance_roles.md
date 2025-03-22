@@ -26,7 +26,7 @@ Contoso Ltd. の最近採用したコンプライアンス管理者として、J
 
 1. Client 2 VM (SC-400-CL1) に **SC-400-CL1\admin** アカウントでログインします。 パスワードは、ラボ ホスティング プロバイダーから支給されます。
 
-1. **Microsoft Edge** を開き、Microsoft 365 管理センター、`https://admin.microsoft.com` に移動し、**MOD 管理者**`admin@WWLxZZZZZZ.onmicrosoft.com` (ここで、ZZZZZZ はラボ ホスティング プロバイダーから支給された一意のテナント ID) としてログインしてください。 管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
+1. **Microsoft Edge** を開き、Microsoft Purview ポータル、`https://admin.microsoft.com` に移動し、**MOD 管理者**`admin@WWLxZZZZZZ.onmicrosoft.com` (ここで、ZZZZZZ はラボ ホスティング プロバイダーから支給された一意のテナント ID) としてログインしてください。 管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
 
 1. 左サイドバーで **[ユーザー]** を展開し、**[アクティブ ユーザー]** を選びます。
 

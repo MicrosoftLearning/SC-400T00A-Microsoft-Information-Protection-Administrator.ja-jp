@@ -29,7 +29,7 @@ lab:
 
 1. **SC-400-cl1\admin** アカウントで Client 1 VM (SC-400-CL1) にログインします。 パスワードは、ラボ ホスティング プロバイダーから支給されます。
 
-1. **Microsoft Edge** を開き、**`https://admin.microsoft.com`** にアクセスし、Microsoft 365 管理センターに MOD 管理者 `admin@WWLxZZZZZZ.onmicrosoft.com` (ZZZZZZ はラボ ホスティング プロバイダーから支給された一意のテナント ID) としてログインしてください。
+1. **Microsoft Edge** を開き、**`https://admin.microsoft.com`** にアクセスし、Microsoft Purview ポータルに MOD 管理者 `admin@WWLxZZZZZZ.onmicrosoft.com` (ZZZZZZ はラボ ホスティング プロバイダーから支給された一意のテナント ID) としてログインしてください。
 
 1. 左側のナビゲーション ウィンドウで **[ユーザー]** を展開し、**[アクティブ ユーザー]** を選びます。
 
@@ -74,19 +74,6 @@ lab:
     ![[ユーザーと管理者のアクティビティの記録を開始する] ボタンを示すスクリーンショット。](../Media/enable-audit-button.png)
 
 1. このオプションを選択すると、このページに青いバーが表示されなくなるはずです。
-
->[警告] この演習で監査を有効にするエラーが発生した場合は、これらの手順を回避策として使用してください。
->1. マウスの右ボタンで Windows ボタンを選択して管理者特権のターミナル ウィンドウを開いてから、[ターミナル (管理者)] を選択します。
->1. `Install-Module -Name ExchangeOnlineManagement` を実行して ExchangeOnlineManagement モジュールをインストールします
->1. `Connect-ExchangeOnline` を実行して ExchangeOnlineManagement に接続します
->1. メッセージが表示されたら、ラボ ホスティング プロバイダーから管理者のユーザー名とパスワードを入力してログインします。
->1. 監査が有効になっているかどうかを確認するには、`Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled` を実行します
->1. false の場合、監査ログはオフになります。
->1. 監査を有効にするには、`Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true` を実行します
->   1. 組織内でスクリプトを実行できないというエラーが表示された場合は、`Enable-OrganizationCustomization` を実行します
->   1. もう一度 `Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true` の実行をお試しください
->1. 監査が有効になっていることを確認するには、`Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled` を実行します
->1. 完了したら、`Disconnect-ExchangeOnline` を実行してセッションを終了します
 
 Microsoft 365 で監査を正常に有効にしました。
 
