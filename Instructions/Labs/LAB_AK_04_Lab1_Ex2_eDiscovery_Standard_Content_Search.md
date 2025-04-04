@@ -22,7 +22,7 @@ lab:
 
 このタスクでは、Joni Sherman のアカウントに必要な電子情報開示のアクセス許可を割り当てます。 これらのアクセス許可を使用すると、不当解雇ケースに必要な電子情報開示データを管理してエクスポートできます。
 
-1. Client 1 VM (LON-CL1) に **lon-cl1\admin** アカウントでログインします。
+1. **SC-400-cl1\admin** アカウントで Client 1 VM (SC-400-CL1) にログインします。
 
 1. **Microsoft Edge** で、 **`https://purview.microsoft.com`** に移動し、Microsoft Purview ポータルに **MOD 管理者** `admin@WWLxZZZZZZ.onmicrosoft.com` としてログインします (ZZZZZZ はラボ ホスティング プロバイダーから支給された固有のテナント ID)。 管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
 
@@ -54,7 +54,7 @@ lab:
 
 次に、不正解雇訴訟の電子情報開示 (Standard) ケースを作成します。 このケースは、訴訟に関連するすべてのアクティビティとデータの中央リポジトリとして機能します。
 
-1. Client 1 VM (LON-CL1) に **lon-cl1\admin** アカウントでログインします。
+1. Client 2 VM (SC-400-CL1) に **SC-400-CL1\admin** アカウントでログインします。
 
 1. **Microsoft Edge** で、 **`https://purview.microsoft.com`** に移動して Microsoft Purview ポータルに **Joni Sherman** `JoniS@WWLxZZZZZZ.onmicrosoft.com` としてログインします (ZZZZZZ はラボ ホスティング プロバイダーによって提供される固有のテナント ID)。
 
