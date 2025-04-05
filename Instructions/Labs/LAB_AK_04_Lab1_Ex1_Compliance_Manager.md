@@ -31,7 +31,7 @@ lab:
 
 このタスクでは、コンプライアンス マネージャーを使用して評価を作成するために必要なアクセス許可を Joni に付与します。 また、Megan に改善のための処置が割り当てられている場合に、それに対処するために必要なアクセス許可を彼女に付与します。
 
-1. Client 1 VM (LON-CL1) に **lon-cl1\admin** アカウントでログインします。 パスワードは、ラボ ホスティング プロバイダーから支給されます。
+1. Client 2 VM (SC-400-CL1) に **SC-400-CL1\admin** アカウントでログインします。 パスワードは、ラボ ホスティング プロバイダーから支給されます。
 
 1. **Microsoft Edge** で、アドレス バーを選択し、**`https://purview.microsoft.com`** に移動して、Microsoft Purview コンプライアンス ポータルに **MOD 管理者** (`admin@WWLxZZZZZZ.onmicrosoft.com`) としてログインします (ZZZZZZ は、ラボ ホスティング プロバイダーによって提供された固有のテナント ID)。 管理者のパスワードは、ラボ ホスティング プロバイダーから支給されます。
 
@@ -151,7 +151,7 @@ lab:
 
 このタスクでは、コンプライアンス マネージャーで割り当てられた改善のための処置を確認して対処します。
 
-1. Client 1 VM (LON-CL1) には **lon-cl1\admin** アカウントでログインし、Microsoft 365 には Joni Sherman としてログインしておく必要があります。 画面の右上の Joni Sherman の写真を選択して **[サインアウト]** を選択し、そのアカウントからサインアウトします。
+1. **SC-400-CL1\admin** として Client 1 VM (SC-400-CL1) にログインして開いたまま、Joni Sherman として Microsoft 365 にログインしておく必要があります。 画面の右上の Joni Sherman の写真を選択して **[サインアウト]** を選択し、そのアカウントからサインアウトします。
 
 1. **Microsoft Edge** を開き、 **`https://outlook.office.com`** に移動します。
 
@@ -214,7 +214,7 @@ lab:
 
 ## タスク 6: 改善アクションを手動で更新する
 
-1. **lon-cl1\admin** として Client 1 VM (LON-CL1) にログインしておく必要があります。
+1. Client 1 VM (SC-400-CL1) に **SC-400-cl1\admin** としてログインして開いたままでいる必要があります。
 
 1. **Microsoft Edge** を開き、 **`https://purview.microsoft.com`** に移動します。
 
